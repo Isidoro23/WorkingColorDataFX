@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="1.7976931348623157E308" prefHeight="600.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.0" minWidth="10.0" prefWidth="716.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="514.0" minHeight="10.0" prefHeight="514.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="194.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TextArea fx:id="myTextArea" prefHeight="266.0" prefWidth="436.0" />
+      <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+              <Button fx:id="sortBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sortButton" prefHeight="100.0" prefWidth="120.0" text="Sort All" textAlignment="CENTER" />
+            <Button fx:id="blueBtn" mnemonicParsing="false" onAction="#blueButton" prefHeight="141.0" prefWidth="266.0" text="Sort Blue" textFill="BLUE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="greenBtn" mnemonicParsing="false" onAction="#greenButton" prefHeight="126.0" prefWidth="154.0" text="Sort Green" textFill="#35cd35" GridPane.columnIndex="2" />
+            <Button fx:id="indigoBtn" mnemonicParsing="false" onAction="#indigoButton" prefHeight="120.0" prefWidth="160.0" text="Sort Indigo" textFill="#a293d7" GridPane.columnIndex="3" />
+            <Button fx:id="orangeBtn" mnemonicParsing="false" onAction="#orangeButton" prefHeight="181.0" prefWidth="144.0" text="Sort Orange" textFill="ORANGE" GridPane.columnIndex="4" />
+            <Button fx:id="redBtn" mnemonicParsing="false" onAction="#redButton" prefHeight="113.0" prefWidth="117.0" text="Sort Red" textFill="RED" GridPane.columnIndex="5" />
+            <Button fx:id="violetBtn" mnemonicParsing="false" onAction="#violetButton" prefHeight="100.0" prefWidth="148.0" text="Sort Violet" textFill="#d05ed0" GridPane.columnIndex="6" />
+            <Button fx:id="yellowBtn" mnemonicParsing="false" onAction="#yellowButton" prefHeight="107.0" prefWidth="249.0" text="Sort Yellow" textFill="#ffff06" GridPane.columnIndex="7" />
+         </children>
+      </GridPane>
+    </children>
+</GridPane>
